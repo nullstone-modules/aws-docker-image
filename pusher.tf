@@ -29,7 +29,7 @@ data "aws_iam_policy_document" "image_pusher" {
       "ecr:CompleteLayerUpload"
     ]
 
-    resources = aws_ecr_repository.this.arn
+    resources = [aws_ecr_repository.this.arn]
   }
 
   statement {
