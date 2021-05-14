@@ -1,3 +1,8 @@
+output "service_name" {
+  value       = "envoy"
+  description = "string ||| "
+}
+
 output "image_repo_name" {
   value       = aws_ecr_repository.this.name
   description = "string ||| "
