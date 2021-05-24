@@ -1,3 +1,7 @@
+output "region" {
+  value = data.aws_region.this.name
+}
+
 output "service_name" {
   value       = "envoy"
   description = "string ||| "
